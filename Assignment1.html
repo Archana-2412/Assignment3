@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <title>Web </title>
+    <style>
+        .form1 {
+            background-color: rgb(121, 124, 158);
+            width: 500px;
+            padding: 10px;
+            border-radius: 5px;
+           
+
+            position: absolute;
+            margin-left: 400px;
+            margin-top: 66px;
+        }
+       .button1{
+           border-radius: 5px;
+           background-color: rgb(224, 161, 43);
+           padding: 12px 23px;
+           border-color: #e0a12b;
+           height: 50px;
+           
+
+       }
+       
+
+        @media(max-width:500px) {
+            .form1 {
+                width: 350px;
+                margin-left: 20px;
+                margin-right: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="form1">
+        <h2></h2>
+        <form>
+            <div >
+                <label>Employee Number:</label>
+                <input type="text" name="idNumber" class="form-control " pattern="[0-9]{6}" />
+            </div>
+
+
+            <div >
+                <label>User Name:</label>
+                <input type="text" class="form-control " max="30" />
+            </div>
+
+
+            <div class="form-group">
+                <span>Domain:</span>
+                <select class="form-control ">Choose the Domain
+                    <option>Web Programming</option>
+                    <option>Java & Cloud</option>
+                </select>
+            </div>
+
+            <div >
+                <label for="module">Choose the Module:</label>
+                <input list="modules" name="module" id="module" class="form-control ">
+
+                <datalist id="modules">
+                    <option value="UI">
+                    <option value="Client Side Scripting">
+                    <option value="React">
+                    <option value="JDBC">
+                    <option value="AWS">
+                </datalist>
+            </div>
+            <div class="form-group">
+                <label>MPT:</label>
+                <input type="number"  class="form-control " min="0" max="100" />
+            </div>
+            <div class="form-group">
+                <label>MTT:</label>
+                <input type="number"  class="form-control " min="0" max="100" />
+            </div>
+            <div class="form-group">
+                <label>Assignment Marks:</label>
+                <input type="number"  class="form-control " min="0" max="15" />
+            </div>
+            <button  class="button1" value=" submit" type=" submit">Submit</button>&nbsp;    &nbsp;   &nbsp;
+            <button  class="button1" value=" reset" type="reset">Reset</button>
+
+        </form>
+    </div>
+</body>
+
+</html>
